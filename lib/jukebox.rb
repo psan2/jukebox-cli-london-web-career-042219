@@ -66,7 +66,7 @@ def run(songs)
   puts "Please enter a command:"
 
   request = gets.chomp
-  until request = "exit"
+  until request == "exit"
     case request
     when "list"
       list(songs)
