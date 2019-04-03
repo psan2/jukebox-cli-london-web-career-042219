@@ -48,11 +48,10 @@ def play(my_songs)
     puts "Please enter a valid, case-sensitive song title:"
     request = gets.chomp
   end
+
   my_songs.map do |song, path|
     if request == song
       system "open #{path}"
-    else
-
     end
   end
 end
