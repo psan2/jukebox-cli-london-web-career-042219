@@ -1,0 +1,28 @@
+
+[1mFrom:[0m /home/spirograph/jukebox-cli-london-web-career-042219/lib/advanced_jukebox.rb @ line 55 Object#play:
+
+    [1;34m36[0m: [32mdef[0m [1;34mplay[0m(my_songs)
+    [1;34m37[0m:   [1;34m#this method is slightly different![0m
+    [1;34m38[0m:   [1;34m#you should still ask the user for input and collect their song choice[0m
+    [1;34m39[0m:   [1;34m#this time, only allow user's to input a song name[0m
+    [1;34m40[0m:   [1;34m#check to see if the name they give is in fact a key of the my_songs hash[0m
+    [1;34m41[0m:   [1;34m#if it isn't, tell them their choice is invalid[0m
+    [1;34m42[0m:   [1;34m#if it is, play the song using the system 'open <file path>' syntax[0m
+    [1;34m43[0m:   [1;34m#get the file path of the song by looking it up in the my_songs hash[0m
+    [1;34m44[0m:   puts [31m[1;31m"[0m[31mPlease enter a song title:[1;31m"[0m[31m[0m
+    [1;34m45[0m:   request = gets.chomp
+    [1;34m46[0m: 
+    [1;34m47[0m:   [32muntil[0m my_songs.has_key?(request)
+    [1;34m48[0m:     puts [31m[1;31m"[0m[31mPlease enter a valid, case-sensitive song title:[1;31m"[0m[31m[0m
+    [1;34m49[0m:     request = gets.chomp
+    [1;34m50[0m:   [32mend[0m
+    [1;34m51[0m: 
+    [1;34m52[0m:   my_songs.map [32mdo[0m |song, path|
+    [1;34m53[0m:     [32mif[0m request == song
+    [1;34m54[0m:       puts [31m[1;31m"[0m[31mNow playing #{song}[0m[31m[1;31m"[0m[31m[0m
+ => [1;34m55[0m:       binding.pry
+    [1;34m56[0m:       system [31m[1;31m"[0m[31mopen #{path}[0m[31m[1;31m"[0m[31m[0m
+    [1;34m57[0m:     [32mend[0m
+    [1;34m58[0m:   [32mend[0m
+    [1;34m59[0m: [32mend[0m
+
