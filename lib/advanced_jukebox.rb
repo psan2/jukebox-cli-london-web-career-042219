@@ -33,6 +33,7 @@ def list(my_songs)
   end
 end
 
+list
 
 def play(my_songs)
   #this method is slightly different!
