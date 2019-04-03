@@ -30,6 +30,7 @@ def list(my_songs)
   #list the songs by name
   my_songs.collect do |song, path|
     binding.pry
+  end
 end
 
 
