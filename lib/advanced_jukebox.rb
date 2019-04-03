@@ -1,6 +1,7 @@
 #Here is the song hash you will be working with. Each key is a song name and each value is the location of it's mp3 file.
 #make sure to edit the value of each key to replace < path to this directory >
 #with the correct path to this directory on your computer
+require 'pry'
 
 my_songs = {
 "Go Go GO" => '/home/spirograph/jukebox-cli-london-web-career-042219//audio/Emerald-Park/01.mp3',
@@ -27,6 +28,8 @@ end
 def list(my_songs)
   #this method is different! Collect the keys of the my_songs hash and
   #list the songs by name
+  my_songs.collect do |song, path|
+    binding.pry
 end
 
 
