@@ -45,6 +45,8 @@ def play(my_songs)
   my_songs.map do |song, path|
     if request == song
       system "open #{path}"
+    end
+  end
 end
 
 play(my_songs)
