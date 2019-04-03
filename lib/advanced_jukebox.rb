@@ -4,7 +4,7 @@
 require 'pry'
 
 my_songs = {
-"Go Go GO" => '/home/spirograph/jukebox-cli-london-web-career-042219//audio/Emerald-Park/01.mp3',
+"Go Go GO" => '/home/spirograph/jukebox-cli-london-web-career-042219/audio/Emerald-Park/01.mp3',
 "LiberTeens" => '/home/spirograph/jukebox-cli-london-web-career-042219/audio/Emerald-Park/02.mp3',
 "Hamburg" =>  '/home/spirograph/jukebox-cli-london-web-career-042219/audio/Emerald-Park/03.mp3',
 "Guiding Light" => '/home/spirograph/jukebox-cli-london-web-career-042219/audio/Emerald-Park/04.mp3',
