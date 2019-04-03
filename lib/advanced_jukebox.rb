@@ -47,6 +47,8 @@ def play(my_songs)
       system "open #{path}"
 end
 
+play(my_songs)
+
 def exit_jukebox
   #this method is the same as in jukebox.rb
 end
