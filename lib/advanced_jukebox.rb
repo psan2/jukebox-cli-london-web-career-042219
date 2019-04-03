@@ -52,6 +52,7 @@ def play(my_songs)
   my_songs.map do |song, path|
     if request == song
       puts "Now playing #{song}"
+      binding.pry
       system "open #{path}"
     end
   end
